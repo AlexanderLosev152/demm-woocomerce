@@ -1,0 +1,28 @@
+@use '../../node_modules/normalize.css/normalize.css';
+
+@use './utils/media';
+
+@use './globals/reset';
+@use './globals/vars';
+@use './globals/container';
+@use './globals/fonts';
+@use './globals/tailwind-classes';
+@use './globals/typography';
+
+@use './blocks/header/header';
+@use './blocks/hero/hero';
+@use './blocks/categories/categories';
+@use './blocks/promo/promo';
+@use './blocks/about/about';
+@use './blocks/contact/contact';
+@use './blocks/footer/footer';
+@use './blocks/woocommerce/woocommerce';
+
+body {
+	font-family: var(--font-family);
+	background: #f3f5f7;
+}
+
+main {
+	overflow: hidden;
+}

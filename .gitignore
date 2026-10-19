@@ -1,0 +1,15 @@
+# База данных (локальные файлы MySQL)
+mysql_data/
+mysql-data/
+db-data/
+*.sql
+*.sql.gz
+
+# Логи
+*.log
+error_log
+access_log
+
+# Кеш и временные файлы
+*.tmp
+*.cache

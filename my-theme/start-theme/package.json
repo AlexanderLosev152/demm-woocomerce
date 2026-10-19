@@ -1,0 +1,20 @@
+{
+  "name": "vite-wordpress-theme",
+  "version": "1.0.0",
+  "description": "WordPress theme with Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0",
+    "sharp": "^0.35.5",
+    "ttf2woff2": "^8.0.1",
+    "vite": "^4.5.14"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "swiper": "^14.3.0"
+  }
+}
