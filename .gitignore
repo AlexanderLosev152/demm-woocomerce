@@ -13,3 +13,7 @@ access_log
 # Кеш и временные файлы
 *.tmp
 *.cache
+
+
+.idea
+.vscode
