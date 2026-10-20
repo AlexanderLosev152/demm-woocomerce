@@ -4,16 +4,16 @@
 .hero {
 	position: relative;
 	width: 100%;
-	color: #fff;
+	color: var(--color-white);
 	&__wrapper {
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 60px;
+		bottom: 3.75rem;
 		z-index: 2;
 	}
 	&__content {
-		max-width: 631px;
+		max-width: 39.4375rem;
 	}
 	&__pagination {
 		position: absolute;
@@ -22,16 +22,16 @@
 	&__title {
 		font-family: var(--font-family);
 		font-weight: 500;
-		font-size: 56px;
+		font-size: 3.5rem;
 		line-height: 105%;
 		letter-spacing: -0.05em;
 	}
 	&__text {
 		font-family: var(--font-family);
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 1rem;
 		line-height: 155%;
-		max-width: 500px;
+		max-width: 31.25rem;
 		text-wrap: pretty;
 	}
 	&__bg {
@@ -45,8 +45,8 @@
 			bottom: 0;
 			background: linear-gradient(
 				180deg,
-				rgba(44, 53, 70, 0.1) 0%,
-				rgba(31, 44, 73, 0.8) 100%
+				var(--color-overlay-start) 0%,
+				var(--color-overlay-end-soft) 100%
 			);
 		}
 	}
@@ -56,16 +56,17 @@
 	&__pagination {
 		display: flex;
 		justify-content: flex-end;
-		gap: 8px;
+		align-items: center;
+		gap: 0.5rem;
 		.swiper-pagination-bullet {
-			width: 10px;
-			height: 10px;
-			background: rgba(255, 255, 255, 0.2);
+			width: 0.625rem;
+			height: 0.625rem;
+			background: var(--color-white-20);
 		}
 		.swiper-pagination-bullet-active {
-			background: #c6bcb2;
-			width: 12px;
-			height: 12px;
+			background: var(--color-warm);
+			width: 0.75rem;
+			height: 0.75rem;
 		}
 	}
 }

@@ -22,7 +22,7 @@
 		width: 100%;
 		border-radius: 1rem;
 		object-fit: cover;
-		background: #e8ecf0;
+		background: var(--color-surface-hover);
 	}
 
 	&__content {
@@ -38,7 +38,7 @@
 		line-height: 1.2;
 		letter-spacing: -0.04em;
 		text-transform: uppercase;
-		color: #213f74;
+		color: var(--color-primary);
 	}
 
 	&__text {
@@ -46,7 +46,7 @@
 		font-weight: 400;
 		font-size: 1rem;
 		line-height: 1.5;
-		color: rgba(0, 7, 45, 0.75);
+		color: var(--color-ink-75);
 	}
 
 	&__quote {
@@ -54,7 +54,7 @@
 		font-weight: 600;
 		font-size: 1.25rem;
 		line-height: 1.4;
-		color: #213f74;
+		color: var(--color-primary);
 	}
 
 	&__link {
@@ -63,14 +63,14 @@
 		font-weight: 500;
 		font-size: 0.875rem;
 		line-height: 1.45;
-		color: #fff;
+		color: var(--color-white);
 		padding: 0.875rem 1.75rem;
 		border-radius: 3.125rem;
-		background: #213f74;
+		background: var(--color-primary);
 		transition: background 0.3s ease-in-out;
 
 		@include hover {
-			background: #002d79;
+			background: var(--color-primary-hover);
 		}
 	}
 }

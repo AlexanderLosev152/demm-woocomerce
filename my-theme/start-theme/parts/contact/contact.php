@@ -26,15 +26,22 @@ $img = get_template_directory_uri() . '/assets/images';
 						<input class="contact__input" type="text" name="name" placeholder="Ваше имя" required>
 					</label>
 					<label class="contact__field">
-						<input class="contact__input" type="tel" name="phone" placeholder="Номер телефона" required>
+    				<label class="contact__field">
+    					<input class="contact__input" 
+          			type="tel" 
+          			name="phone" 
+          			placeholder="Номер телефона" 
+          			id="phone-input"
+          			required>
 					</label>
 				</div>
 
-				<label class="contact__agree">
-					<input class="contact__checkbox" type="checkbox" name="agree" required>
-					<span class="contact__agree-text">
-						Я согласен(а) с <a href="#">Политикой конфиденциальности</a>.
-					</span>
+				<label class="checkbox">
+  				<input type="checkbox" name="agreement" class="checkbox__input" required>
+  				<span class="checkbox__box"></span>
+  				<span class="checkbox__text">
+    				Я согласен(а) с <a href="#" target="_blank">Политикой конфиденциальности</a>.
+  				</span>
 				</label>
 
 				<button class="contact__submit" type="submit">Оставить заявку</button>

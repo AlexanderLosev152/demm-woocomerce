@@ -17,7 +17,7 @@
 		line-height: 1.2;
 		letter-spacing: -0.04em;
 		text-transform: uppercase;
-		color: #213f74;
+		color: var(--color-primary);
 	}
 
 	&__all {
@@ -26,14 +26,14 @@
 		font-weight: 500;
 		font-size: 0.875rem;
 		line-height: 1.45;
-		color: #fff;
+		color: var(--color-white);
 		padding: 0.875rem 1.75rem;
 		border-radius: 3.125rem;
-		background: #213f74;
+		background: var(--color-primary);
 		transition: background 0.3s ease-in-out;
 
 		@include hover {
-			background: #002d79;
+			background: var(--color-primary-hover);
 		}
 	}
 
@@ -56,7 +56,7 @@
 		flex-direction: column;
 		overflow: hidden;
 		border-radius: 1rem;
-		background: #fff;
+		background: var(--color-surface);
 	}
 
 	&__image {
@@ -67,7 +67,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			background: #e8ecf0;
+			background: var(--color-surface-hover);
 		}
 	}
 
@@ -82,10 +82,10 @@
 		font-weight: 500;
 		font-size: 0.8125rem;
 		line-height: 1.2;
-		color: #fff;
+		color: var(--color-white);
 		padding: 0.5rem 0.875rem;
 		border-radius: 3.125rem;
-		background: #e02b2b;
+		background: var(--color-sale);
 	}
 
 	&__body {
@@ -100,7 +100,7 @@
 		font-weight: 400;
 		font-size: 0.8125rem;
 		line-height: 1.3;
-		color: #9ca3af;
+		color: var(--color-text-faded);
 	}
 
 	&__card-title {
@@ -108,7 +108,7 @@
 		font-weight: 600;
 		font-size: 1.25rem;
 		line-height: 1.3;
-		color: #213f74;
+		color: var(--color-primary);
 	}
 
 	&__text {
@@ -116,7 +116,7 @@
 		font-weight: 400;
 		font-size: 0.9375rem;
 		line-height: 1.45;
-		color: rgba(0, 7, 45, 0.7);
+		color: var(--color-ink-70);
 	}
 
 	&__link {
@@ -126,12 +126,12 @@
 		font-weight: 500;
 		font-size: 0.9375rem;
 		line-height: 1.45;
-		color: #213f74;
+		color: var(--color-primary);
 		text-decoration: underline;
 		transition: color 0.3s ease-in-out;
 
 		@include hover {
-			color: #002d79;
+			color: var(--color-primary-hover);
 		}
 	}
 }
