@@ -1,0 +1,76 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/media' as *;
+
+.about {
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+		align-items: center;
+
+		@include media($tablet) {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+	}
+
+	&__media {
+		position: relative;
+	}
+
+	&__media-image {
+		width: 100%;
+		border-radius: 1rem;
+		object-fit: cover;
+		background: #e8ecf0;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	&__title {
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 2.25rem;
+		line-height: 1.2;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+		color: #213f74;
+	}
+
+	&__text {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: rgba(0, 7, 45, 0.75);
+	}
+
+	&__quote {
+		font-family: var(--font-family);
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 1.4;
+		color: #213f74;
+	}
+
+	&__link {
+		align-self: flex-start;
+		font-family: var(--font-family);
+		font-weight: 500;
+		font-size: 0.875rem;
+		line-height: 1.45;
+		color: #fff;
+		padding: 0.875rem 1.75rem;
+		border-radius: 3.125rem;
+		background: #213f74;
+		transition: background 0.3s ease-in-out;
+
+		@include hover {
+			background: #002d79;
+		}
+	}
+}

@@ -1,4 +1,9 @@
 {
 	"cSpell.words": ["bloginfo"],
-	"git.ignoreLimitWarning": true
+	"git.ignoreLimitWarning": true,
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"[php]": {
+		"editor.defaultFormatter": "junstyle.php-cs-fixer",
+		"editor.formatOnSave": true
+	}
 }

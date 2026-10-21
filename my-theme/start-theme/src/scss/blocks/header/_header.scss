@@ -55,6 +55,10 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 0.5rem;
+    @include media($tablet) {
+      grid-template-columns: 6rem 25.81rem 1fr 1fr 1fr;
+      gap: 1rem;
+    }
   }
 
   &__bottom-btn {
@@ -66,6 +70,9 @@
     padding: 0.875rem 1.75rem;
     border-radius: 3.125rem;
     background: var(--color-primary);
+    @include media($tablet) {
+      display: none;
+    }
   }
 
   &__search-form {
@@ -77,6 +84,9 @@
     border: 0.0625rem solid var(--color-border-light);
     border-radius: 2.875rem;
     background: var(--color-bg);
+    @include media($tablet) {
+      margin-left: 0;
+    }
 
     input {
       background: transparent;
@@ -94,6 +104,9 @@
     text-align: right;
     color: var(--color-primary);
     display: grid;
+    @include media($tablet) {
+      display: none;
+    }
 
     span {
       font-family: var(--font-family);
@@ -112,6 +125,10 @@
     line-height: 135%;
     color: #fff;
     background: #213f74;
+
+    @include media($tablet) {
+      display: none;
+    }
 
     &__main-wrapper {
       display: flex;
@@ -164,4 +181,79 @@
     }
   }
 
+  &__basket-mobile,
+  &__user-mobile {
+    display: none;
+    @include media($tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.125rem;
+      height: 3.125rem;
+      border-radius: 100%;
+      background: #f3f5f7;
+      border: 1px solid #e5e9ec;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 135%;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #c6bcb2;
+        width: 17px;
+        height: 17px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &__mobileicon {
+    display: none;
+    @include media($tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.125rem;
+      height: 3.125rem;
+      background: #213f74;
+      border-radius: 100%;
+
+      span {
+        position: relative;
+        width: 20px;
+        height: 2px;
+        display: block;
+        border-radius: 999px;
+        background: #fff;
+
+        &::before,
+        &::after {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+          background: inherit;
+          content: '';
+        }
+
+        &::before {
+          top: -6px;
+        }
+
+        &::after {
+          top: 6px;
+        }
+      }
+    }
+  }
 }
